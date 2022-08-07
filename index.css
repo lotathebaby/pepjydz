@@ -1,15 +1,170 @@
 :root {
   --bg-color: #87ceeb;
   --btn-color: #1363DF;
-
-/* header by Kosy */
-
-/* hero section by Kosy */
-
-/* About section by Kosy */
-
-/* projects section by Sharon */
-
-/* Contact section by Sharon */
-
-/* Footer section by Sharon */
+}
+*  {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* CONTACT */
+#contact {
+  display: flex;
+  flex-direction: column;
+}
+.showcase {
+  background-color: var(--bg-color);
+  padding: 5rem;
+  text-align: center;
+  line-height: 3rem;
+}
+.showcase h1 {
+  font-size: 2.5rem;
+}
+.showcase p {
+  font-size: 1.2rem;
+}
+.contact--card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 3rem 7rem;
+  align-items: center;
+}
+.contact--card h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.contact--info {
+  display: flex;
+  flex-direction: column;
+}
+.contact--info img {
+  width: 300px;
+}
+.contact--info div {
+  display: grid;
+  gap: 1rem;
+  margin: 2rem;
+}
+.contact--info div span {
+  margin-right: 1rem;
+}
+.contact--info div span i {
+  font-size: 1.5rem;
+}
+.contact--card form {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  gap: 1rem;
+}
+.contact--card form label {
+  font-size: 1.5rem;
+  width: 80%;
+  text-align: center;
+  font-weight: 600;
+  align-self: center;
+}
+.contact--card form > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.contact--card form input {
+  height: 2.5rem;
+  border-radius: 10px;
+  border: 1px solid #cecbcb;
+  padding: 1rem;
+}
+.contact--card form input::placeholder {
+  color: #cecbcb;
+}
+.contact--card form textarea {
+  border-radius: 10px;
+  border: 1px solid #cecbcb;
+  padding: 1rem;
+}
+.contact--card form textarea::placeholder {
+  color: #cecbcb;
+}
+.contact--card form input[type="submit"] {
+  border: none;
+  background-color: var(--btn-color);
+  color: white;
+}
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #cecbcb;
+}
+footer .logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer .logo img {
+  width: 200px;
+  height: 200px;
+}
+footer .logo div {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  position: relative;
+  top: -1.5rem;
+}
+footer .logo div a {
+  text-decoration: none;
+  color: black;
+}
+footer .logo div a:hover {
+  color: var(--btn-color);
+}
+footer .logo div i {
+  font-size: 1.5rem;
+}
+footer .footer--nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+}
+.footer--nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.footer--nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+.footer--nav ul li a:hover {
+  color: var(--btn-color);
+  border-bottom: 2px solid var(--btn-color);
+}
+footer .form {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+footer form input[type="text"] {
+  width: 250px;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+footer form input[type="submit"] {
+  /* height: 2rem; */
+  border-radius: 5px;
+  padding: 0.5rem;
+  cursor: pointer;
+  background-color: var(--btn-color);
+  border: none;
+  color: white;
+}
+.form p {
+  font-size: 0.8rem;
+}
