@@ -36,9 +36,12 @@ ul {
 li {
     list-style: none;
     font-size: 14px;
-    color: var(--txt-color);
 }
-header > button {
+li > a {
+    color: var(--txt-color);
+    text-decoration: none;
+}
+header > button, .txt-div > button {
     width: 120px;
     height: 40px;
     margin-top: 20px;
@@ -150,9 +153,41 @@ header > button {
 .is-hidden {
     display: none;
 }
+#about {
+    display: flex;
+    margin-top: 70px;
+    color: var(--txt-color);
+    justify-content: center;
+    font-size: 1.2em;
+}
+.img-div {
+    width: 550px;
+    margin-right: 50px;
+}
+.img-div > img {
+    width: 540px;
+}
+.txt-div {
+    width: 500px;
+    line-height: 2;
+    position: relative;
+    top: 10px;
+}
+span {
+    font-size: 2em;
+    color: #1363DF;
+    font-weight: 700;
+}
+button > a {
+    text-decoration: none;
+    color: var(--txt-color);
+}
+hr {
+    margin: 40px 0;
+}
 #services {
-    /* background: url("https://media.istockphoto.com/photos/view-of-wind-turbines-generating-electricity-in-english-channel-from-picture-id1193284558?k=20&m=1193284558&s=612x612&w=0&h=yW_cwTKo23hN8anVXelnFfmg6N_DFubYbriyc0HE_AI=");
-    background-size: contain; */
+    background: url("https://media.istockphoto.com/photos/underwater-fiber-optic-cable-on-ocean-floor-picture-id1362710800?k=20&m=1362710800&s=612x612&w=0&h=5GA1SQIHVcS1V7dUGkQiVDm4lau58WGkfLN-sUR1hD4=");
+    background-size: cover;
     margin-top: 50px;
 }
 #services > h3 {
