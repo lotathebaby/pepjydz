@@ -1,15 +1,186 @@
 :root {
-  --bg-color: #87ceeb;
-  --btn-color: #1363DF;
-
-/* header by Kosy */
-
-/* hero section by Kosy */
-
-/* About section by Kosy */
-
-/* projects section by Sharon */
-
-/* Contact section by Sharon */
-
-/* Footer section by Sharon */
+    --bg-color: #379fc2;
+    --btn-color: #1363DF;
+    --txt-color: #f9f5eb;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: var(--bg-color);
+    font-family: 'Open sans', sans-serif;
+    background-size: cover;
+}
+header {
+    width: 100%;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: space-between;
+}
+header > img {
+    width: 20%;
+    height: 150px;
+    margin-top: -55px;
+    margin-left: -20px;
+}
+nav {
+    width: 60%;
+}
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 45px;
+}
+li {
+    list-style: none;
+    font-size: 14px;
+    color: var(--txt-color);
+}
+header > button {
+    width: 120px;
+    height: 40px;
+    margin-top: 20px;
+    font-family: inherit;
+    border: none;
+    background-color: #1363DF;
+    color: var(--txt-color);
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 8px;
+}
+#carousel-div {
+    width: 100%;
+    background: url("https://media.istockphoto.com/photos/view-of-wind-turbines-generating-electricity-in-english-channel-from-picture-id1193284558?k=20&m=1193284558&s=612x612&w=0&h=yW_cwTKo23hN8anVXelnFfmg6N_DFubYbriyc0HE_AI=");
+    background-size: contain;
+}
+.carousel {
+    position: relative;
+    height: 500px;
+    width: 60%;
+    margin: 0 auto;
+}
+.carousel-track-container {
+    background: var(--bg-color);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.carousel-track {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 250ms ease-in;
+}
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    transition: 0.6s ease;
+}
+.img-txt {
+    font-size: 15px;
+    padding: 8px 0px;
+    position: absolute;
+    bottom: 0;
+    width: 60%;
+    right: 0;
+    border: 2px solid var(--bg-color);
+    background: var(--bg-color);
+    text-align: center;
+}
+.img-txt > h3 {
+    color: var(--txt-color);
+    font-size: 2.4em;
+}
+.img-txt > p {
+    line-height: 1.4;
+    color: var(--txt-color);
+}
+.carousel-btn-left {
+    left: -40px;
+}
+.carousel-btn-right {
+    right: -40px;
+}
+.carousel-btn > i {
+    font-size: 25px;
+    color: #fff;
+}
+.carousel-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.carousel-slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    border: 2px solid var(--txt-color);
+    display: block;
+}
+.carousel-nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+.carousel-indicator {
+    border: 0;
+    margin: 0 12px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    background: #4682b4;
+}
+.carousel-indicator.current-slide {
+    background: #fff;
+}
+.is-hidden {
+    display: none;
+}
+#services {
+    /* background: url("https://media.istockphoto.com/photos/view-of-wind-turbines-generating-electricity-in-english-channel-from-picture-id1193284558?k=20&m=1193284558&s=612x612&w=0&h=yW_cwTKo23hN8anVXelnFfmg6N_DFubYbriyc0HE_AI=");
+    background-size: contain; */
+    margin-top: 50px;
+}
+#services > h3 {
+    color: var(--txt-color);
+    font-size: 2.2em;
+    text-align: center;
+    text-decoration: underline;
+}
+#service-div {
+    margin-top: 30px;
+    color: var(--txt-color);
+    display: grid;
+    justify-content: center;
+    grid-gap: 30px;
+    grid-template-columns: 380px 380px 380px;
+    grid-template-rows: 500px 500px;
+}
+.service > img {
+    width: 350px;
+    height: 300px;
+}
+.service > h4 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    text-decoration-color: var(--btn-color);
+}
+.service > p {
+    font-size: 14px;
+    line-height: 1.9;
+}
