@@ -138,6 +138,7 @@ header > button:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: -1;
 }
 .carousel-slide {
     position: absolute;
