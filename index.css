@@ -9,63 +9,70 @@
     margin: 0;
 }
 body {
-    background: var(--bg-color);
     font-family: 'Open sans', sans-serif;
-    background-size: cover;
+    /* background-color: var(--bg-color); */
 }
 header {
-    width: 100%;
-    border: 2px solid #fff;
-    display: flex;
-    justify-content: space-between;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  background-color: white;
 }
 header > img {
-    width: 20%;
-    height: 150px;
-    margin-top: -55px;
-    margin-left: -20px;
+  width: 250px;
+  height: 150px;
+  margin-top: -2rem; 
 }
 nav {
-    width: 60%;
+  width: 60%;
 }
 ul {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 45px;
+  display: flex;
+  justify-content: space-evenly;
 }
 li {
-    list-style: none;
-    font-size: 14px;
+  list-style: none;
+  font-size: 14px;
+  padding-bottom: 0.3rem;
 }
 li > a {
-    color: var(--txt-color);
-    text-decoration: none;
+  color: var(--bg-color);
+  text-decoration: none;
 }
+li > a:hover {
+  border-bottom: 2px solid var(--bg-color);
+}
+
 header > button, .txt-div > button {
-    width: 120px;
-    height: 40px;
-    margin-top: 20px;
-    font-family: inherit;
-    border: none;
-    background-color: #1363DF;
-    color: var(--txt-color);
-    font-size: 14px;
-    font-weight: 700;
-    margin-right: 8px;
+  font-family: inherit;
+  border: none;
+  background-color: #1363DF;
+  color: var(--txt-color);
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+header > button:hover {
+  opacity: 0.7;
 }
 #carousel-div {
     width: 100%;
-    background: url("https://media.istockphoto.com/photos/view-of-wind-turbines-generating-electricity-in-english-channel-from-picture-id1193284558?k=20&m=1193284558&s=612x612&w=0&h=yW_cwTKo23hN8anVXelnFfmg6N_DFubYbriyc0HE_AI=");
-    background-size: contain;
+    /* background: url("https://media.istockphoto.com/photos/view-of-wind-turbines-generating-electricity-in-english-channel-from-picture-id1193284558?k=20&m=1193284558&s=612x612&w=0&h=yW_cwTKo23hN8anVXelnFfmg6N_DFubYbriyc0HE_AI=");
+    background-size: contain; */
 }
 .carousel {
     position: relative;
     height: 500px;
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
 }
 .carousel-track-container {
-    background: var(--bg-color);
+    /* background: var(--bg-color); */
     width: 100%;
     height: 100%;
     position: relative;
@@ -93,28 +100,35 @@ header > button, .txt-div > button {
 }
 .img-txt {
     font-size: 15px;
-    padding: 8px 0px;
     position: absolute;
-    bottom: 0;
+    top: 50%;
+    transform: translateY(-50%);
     width: 60%;
-    right: 0;
-    border: 2px solid var(--bg-color);
-    background: var(--bg-color);
-    text-align: center;
+    left: 20%;
+    text-align: left;
+    z-index: 3;
 }
 .img-txt > h3 {
-    color: var(--txt-color);
-    font-size: 2.4em;
+    width: fit-content;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--bg-color);
+    color: white;
+    font-size: 1em;
+    z-index: 3;
+    margin-bottom: 2rem;
 }
 .img-txt > p {
     line-height: 1.4;
-    color: var(--txt-color);
+    color: white;
+    font-size: 1.2em;
 }
 .carousel-btn-left {
-    left: -40px;
+    left: 40px;
+    z-index: 2;
 }
 .carousel-btn-right {
-    right: -40px;
+    right: 40px;
+    z-index: 2;
 }
 .carousel-btn > i {
     font-size: 25px;
@@ -132,11 +146,17 @@ header > button, .txt-div > button {
     width: 100%;
     border: 2px solid var(--txt-color);
     display: block;
+    z-index: 2;
 }
 .carousel-nav {
     display: flex;
     justify-content: center;
     padding: 10px 0;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
 }
 .carousel-indicator {
     border: 0;
@@ -153,25 +173,44 @@ header > button, .txt-div > button {
 .is-hidden {
     display: none;
 }
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
 #about {
     display: flex;
-    margin-top: 70px;
-    color: var(--txt-color);
+    padding: 3rem;
+    color:black;
     justify-content: center;
     font-size: 1.2em;
+    gap: 3rem;
 }
 .img-div {
-    width: 550px;
-    margin-right: 50px;
+    width: 50%;
+    height: auto;
 }
 .img-div > img {
-    width: 540px;
+    width: 100%;
+    border-radius: 10px;
 }
 .txt-div {
-    width: 500px;
-    line-height: 2;
+    width: 50%;
+    line-height: 1.5;
     position: relative;
-    top: 10px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.7);
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
 }
 span {
     font-size: 2em;
@@ -182,8 +221,8 @@ button > a {
     text-decoration: none;
     color: var(--txt-color);
 }
-hr {
-    margin: 40px 0;
+button:hover {
+  opacity: 0.7;
 }
 #services {
     background: url("https://media.istockphoto.com/photos/underwater-fiber-optic-cable-on-ocean-floor-picture-id1362710800?k=20&m=1362710800&s=612x612&w=0&h=5GA1SQIHVcS1V7dUGkQiVDm4lau58WGkfLN-sUR1hD4=");
@@ -191,6 +230,7 @@ hr {
     margin-top: 50px;
 }
 #services > h3 {
+    padding-top: 2rem;
     color: var(--txt-color);
     font-size: 2.2em;
     text-align: center;
@@ -201,21 +241,31 @@ hr {
     color: var(--txt-color);
     display: grid;
     justify-content: center;
-    grid-gap: 30px;
-    grid-template-columns: 380px 380px 380px;
+    grid-gap: 4rem;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 500px 500px;
+    padding: 2rem 3rem;
+}
+.service {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
 }
 .service > img {
-    width: 350px;
-    height: 300px;
+    width: 100%;
+    height: 50%;
+    border-radius: 10px 10px 0 0;
 }
 .service > h4 {
+    padding-left: 1.5rem;
     font-size: 1.8em;
+    margin-top: 1rem;
     margin-bottom: 10px;
     text-decoration: underline;
     text-decoration-color: var(--btn-color);
 }
 .service > p {
+    padding-left: 1.5rem;
     font-size: 14px;
     line-height: 1.9;
 }
