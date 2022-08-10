@@ -1,3 +1,9 @@
+:root {
+    --bg-color: #87ceeb;
+    --btn-color: #1363df;
+    --txt-color: white;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -275,13 +281,14 @@ button:hover {
 /* CONTACT */
 #contact {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
 }
 .showcase {
   background-color: var(--bg-color);
   padding: 5rem;
   text-align: center;
   line-height: 3rem;
+  
 }
 .showcase h1 {
   font-size: 2.5rem;
@@ -303,6 +310,7 @@ button:hover {
 .contact--info {
   display: flex;
   flex-direction: column;
+  border-bottom: 2px solid black;
 }
 .contact--info img {
   width: 300px;
@@ -365,6 +373,9 @@ footer {
   justify-content: space-around;
   align-items: center;
   background-color: #cecbcb;
+}
+.copyright-mobile {
+    display: none;
 }
 footer .logo {
   display: flex;
@@ -430,6 +441,6 @@ footer form input[type="submit"] {
   border: none;
   color: white;
 }
-.form p {
+.form p, .copyright-mobile {
   font-size: 0.8rem;
 }
