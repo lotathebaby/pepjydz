@@ -1,0 +1,198 @@
+@media screen and (min-width: 1023px) and (max-width: 1200px) {
+    #service-div {
+        grid-gap: 25px;
+        text-align: center;
+       grid-template-columns: 330px 330px 330px;
+    }
+    .mobile-nav-toggle {
+        display: none;
+    }
+    .service {
+        width: 330px;
+    }
+    .service > img {
+        width: 300px;
+        height: 270px;
+    }  
+    .service > p {
+        width: 330px;
+    }
+}
+@media screen and (min-width: 751px) and (max-width: 1022px) {
+    header > img {
+        margin-left: -13px;
+    }
+    .mobile-nav-toggle {
+        display: none;
+    }
+    nav {
+        width: 68%;
+    }
+    .img-txt {
+        font-size: 14px;
+        width: 70%;
+        height: 170px;
+    }
+    .img-txt > p {
+        line-height: 1.65;
+    }
+    #about {
+        font-size: 0.9em;
+    }
+    .img-div {
+        width: 370px;
+        margin-right: 10px;
+    }
+    .img-div > img {
+        width: 370px;
+    }
+    .txt-div {
+        width: 380px;
+        top: 0px;
+        text-align: center;
+    }
+    #service-div {
+        grid-gap: 10px;
+        text-align: center;
+        place-items: center;
+        grid-template-columns: 370px 370px;
+        grid-template-rows: 500px 500px 500px;
+    }
+    .service > img {
+        height: 280px;
+    }
+    .service > h4 {
+        margin-top: 20px;
+    }
+}
+@media screen and (min-width: 330px) and (max-width: 750px) {
+    header {
+        width: 100%;
+        height: 90px;
+    }
+    header > img {
+        width: 300px;
+        height: 200px;
+        margin-top: -3.5rem;
+        margin-left: -2rem; 
+      }
+    .primary-navigation {
+        padding: 2rem;
+        margin: 0;
+        position: fixed;
+        z-index: 1000;
+        inset: 0 0 50% 10%;
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;
+        backdrop-filter: blur(1rem);
+        background: hsl(0 0% 100% / 0.1)
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    li > a {
+        padding-bottom: 2rem;
+    }
+    .primary-navigation[data-visible="true"] {
+        transform: translateX(0%);
+    }
+    .mobile-nav-toggle {
+        display: block;
+        position: absolute;
+        background-color: transparent;
+        width: 2rem;
+        aspect-ratio: 1;
+        top: 2rem;
+        margin-top: -10px;
+        right: 2rem;
+        z-index: 9999;
+        background-image: url("images/justify.png");
+        background-repeat: no-repeat;
+    }
+    header > button {
+        display: none;
+    }
+    .mobile-nav-toggle[aria-expanded="true"] {
+        background-image: url("images/x.png");
+        background-repeat: no-repeat;
+    }
+    .img-txt > button {
+        font-size: 13px;
+        font-weight: 700;
+        height: 2rem;
+        padding: 0.5rem 1.2rem;
+        margin-top: 10px;
+    }
+    #about {
+        display: flex;
+        font-size: 0.9em;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("https://images.pexels.com/photos/70419/pexels-photo-70419.jpeg?auto=compress&cs=tinysrgb&w=600");
+    }
+    .img-div {
+      display: none;
+    }
+    .img-div > img {
+        display: none;
+    }
+    .txt-div {
+        width: 400px;
+        line-height: 2;
+        color: #fff;
+        font-weight: 700;
+        position: relative;
+        top: 10px;
+        text-shadow: 0 0 5px var(--btn-color);
+        text-align: center;
+        padding-top: 3em;
+    }
+    span {
+        font-size: 2em;
+        text-shadow: none;
+        color: #1363DF;
+        font-weight: 700;
+    }
+    button > a {
+        text-decoration: none;
+        color: var(--txt-color);
+    }
+    hr {
+        margin-top: 40px;
+    }
+    #services {
+        padding-top: 3em;
+    }
+    #services > h3 {
+        color: var(--txt-color);
+        font-size: 2.2em;
+        text-align: center;
+        text-decoration: underline;
+    }
+    #service-div {
+        margin-top: 30px;
+        color: var(--txt-color);
+        display: flex;
+        place-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+    .service {
+        width: 350px;
+    }
+    .service > img {
+        width: 350px;
+        height: 300px;
+    }
+    .service > h4 {
+        font-size: 1.8em;
+        margin-bottom: 10px;
+        text-decoration: underline;
+        text-decoration-color: var(--btn-color);
+    }
+    .service > p {
+        font-size: 14px;
+        line-height: 1.9;
+    }
