@@ -16,16 +16,36 @@
 <body>
     <header>
         <img src="PEPJYDZ__2_-removebg-preview.png" alt="logo" />
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+            <span class="sr-only">Menu</span>
+        </button>
+
         <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#sustainability">Sustainability</a></li>
-                <li><a href="#contacts">Contacts</a></li>
+            <ul id="primary-navigation"
+            data-visible="false"
+             class="primary-navigation flex">
+
+                <li class="active">
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#services">Services</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#about">About Us</a>
+                </li>
+                <li>
+                    <a href="#sustainability">Sustainability</a>
+                </li>
+                <li>
+                    <a href="#contacts">Contacts</a>
+                </li>
             </ul>
         </nav>
+
         <button>Contact Us</button>
     </header>
     <main>
@@ -44,6 +64,7 @@
                                     <h3>We Offer Professional Services</h3>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere accusamus
                                         voluptates perspiciatis soluta at! Quae officiis rem quis veniam doloremque?</p>
+                                        <button>Contact Us</button>
                                 </div>
                             </li>
                             <li class="carousel-slide">
