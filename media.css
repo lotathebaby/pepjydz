@@ -242,7 +242,8 @@
     }
     footer {
         flex-direction: column-reverse;
-        padding: 2rem;
+        padding: 2rem 0.5rem;
+        width: 100%;
     }
     .copyright {
         display: none;
