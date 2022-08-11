@@ -9,13 +9,14 @@
     <script src="https://kit.fontawesome.com/f50cb12bbf.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="media.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 
-<header>
+<header class="header">
     <img src="PEPJYDZ__2_-removebg-preview.png" alt="logo" />
     <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
         <span class="sr-only">Menu</span>
@@ -97,7 +98,7 @@
             </div>
         </div>
     </section>
-    <section id="about">
+    <section id="about" class="about">
         <div class="img-div">
             <img src="https://images.pexels.com/photos/70419/pexels-photo-70419.jpeg?auto=compress&cs=tinysrgb&w=600" />
         </div>
@@ -105,13 +106,14 @@
             <p><span>PEPJYDZ LIMITED</span> was incorporated in PORT HARCOURT, NIGERIA with registration number
                 1421804. It was registered on the 29th of June, 2017. The company's registered office address is NO
                 5 OMUMA CLOSE, RUMUOGBA ESTATE, PORT HARCOURT.</p>
-            <button><a href="https://ng-check.com/pepjydz-limited/4629132.html">Learn More</a></button>
+            <button class="about-btn"><a href="https://ng-check.com/pepjydz-limited/4629132.html">Learn
+                    More</a></button>
         </div>
     </section>
     <section id="services">
-        <h3>OUR SERVICES</h3>
+        <h3 class="service-title">OUR SERVICES</h3>
         <div id="service-div">
-            <div class="service">
+            <div class="service down">
                 <img src="https://media.istockphoto.com/photos/asian-engineer-working-in-engine-room-he-using-laptop-in-engine-of-picture-id1218412041?b=1&k=20&m=1218412041&s=170667a&w=0&h=FtPIls6fpMOorJPMnfWwxEzRCrRZ2cjvrG1aMffmUqc="
                     alt="" />
                 <h4>Ship Repairs</h4>
@@ -119,7 +121,7 @@
                     itaque dolore officia vitae perspiciatis aut esse quam magni quidem quas quisquam qui facilis,
                     voluptas vel consectetur sapiente mollitia.</p>
             </div>
-            <div class="service">
+            <div class="service up">
                 <img src="https://images.pexels.com/photos/262353/pexels-photo-262353.jpeg?auto=compress&cs=tinysrgb&w=600"
                     alt="" />
                 <h4>Marine Operational Support</h4>
@@ -127,7 +129,7 @@
                     itaque dolore officia vitae perspiciatis aut esse quam magni quidem quas quisquam qui facilis,
                     voluptas vel consectetur sapiente mollitia.</p>
             </div>
-            <div class="service">
+            <div class="service down">
                 <img src="https://images.unsplash.com/photo-1598193957011-39b9f2916992?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fG1hcml0aW1lJTIwbG9naXN0aWNzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                     alt="" />
                 <h4>Maritime Logistics</h4>
@@ -135,7 +137,7 @@
                     itaque dolore officia vitae perspiciatis aut esse quam magni quidem quas quisquam qui facilis,
                     voluptas vel consectetur sapiente mollitia.</p>
             </div>
-            <div class="service">
+            <div class="service down">
                 <img src="https://media.istockphoto.com/photos/caucasian-man-engineer-staff-worker-with-tablet-in-hand-and-offshore-picture-id1213587532?b=1&k=20&m=1213587532&s=170667a&w=0&h=SoaHsVBMRrv2Xm-hPRBTDypZ0gXsHQKdOYYjMnxHxuc="
                     alt="" />
                 <h4>Marine Consultancy</h4>
@@ -143,7 +145,7 @@
                     itaque dolore officia vitae perspiciatis aut esse quam magni quidem quas quisquam qui facilis,
                     voluptas vel consectetur sapiente mollitia.</p>
             </div>
-            <div class="service">
+            <div class="service up">
                 <img src="https://media.istockphoto.com/photos/oil-rig-worker-fixing-the-pipes-picture-id157315939?k=20&m=157315939&s=612x612&w=0&h=RwleQqwQp3MweyCXN88MdUiObVTTrkXWRQmEIDYPxaM="
                     alt="" />
                 <h4>Marine Engineering</h4>
@@ -151,7 +153,7 @@
                     itaque dolore officia vitae perspiciatis aut esse quam magni quidem quas quisquam qui facilis,
                     voluptas vel consectetur sapiente mollitia.</p>
             </div>
-            <div class="service">
+            <div class="service down">
                 <img src="https://media.istockphoto.com/photos/takes-a-risk-at-work-picture-id1132245221?b=1&k=20&m=1132245221&s=170667a&w=0&h=GIv9bmsjEE9KqvkyCaRlhm8FDd2nt15LyX4FeKSCSWk="
                     alt="" />
                 <h4>New Building Project</h4>
@@ -164,8 +166,8 @@
     <!-- CONTACT US -->
     <section id="contact">
         <div class="showcase">
-            <h1>Get In Touch</h1>
-            <p>Have a question? Concern? Request? We'd love to hear from you!</p>
+            <h1 class="showcase-title">Get In Touch</h1>
+            <p class="showcase-text">Have a question? Concern? Request? We'd love to hear from you!</p>
         </div>
         <div class="contact--card">
             <div class="contact--info">
@@ -194,7 +196,7 @@
     </section>
 </main>
 <!-- FOOTER -->
-<footer id="footer">
+<footer id="footer" class="footer">
     <section class="logo">
         <!-- LOGO -->
         <img src="./images/PEPJYDZ-removebg-preview.png" alt="">
@@ -229,6 +231,31 @@
     </section>
 </footer>
 
+<script>
+    ScrollReveal({
+        reset: true,
+        distance: '60px',
+        duration: 2500,
+        delay: 300
+    });
+
+    ScrollReveal().reveal('.header', { delay: 500 });
+    ScrollReveal().reveal('.carousel', { delay: 600, origin: 'left' });
+    ScrollReveal().reveal('.img-txt', { delay: 700, origin: 'right' });
+    ScrollReveal().reveal('.img-div', { delay: 900, origin: 'bottom' });
+    ScrollReveal().reveal('.txt-div', { delay: 1000, origin: 'right' });
+    ScrollReveal().reveal('.about-btn', { delay: 1000, origin: 'left' });
+    ScrollReveal().reveal('.service-title', { delay: 1100, origin: 'left' });
+    ScrollReveal().reveal('.service.down', { delay: 1200, origin: 'bottom' });
+    ScrollReveal().reveal('.service.up', { delay: 1200, origin: 'top' });
+    ScrollReveal().reveal('.contact--info', { delay: 1300, origin: 'left' });
+    ScrollReveal().reveal('.contact--form', { delay: 1350, origin: 'right' });
+    ScrollReveal().reveal('.showcase-title', { delay: 1400, origin: 'right' });
+    ScrollReveal().reveal('.showcase-text', { delay: 1400, origin: 'top' });
+    ScrollReveal().reveal('.logo', { delay: 1500, origin: 'left' });
+    ScrollReveal().reveal('.form', { delay: 1500, origin: 'right' });
+    ScrollReveal().reveal('.footer--nav', { delay: 1500, origin: 'top' });
+</script>
 <script src="index.js"></script>
 </body>
 
