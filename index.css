@@ -9,11 +9,13 @@
     padding: 0;
     margin: 0;
 }
+
 body {
     overflow-x: hidden;
     font-family: 'Open sans', sans-serif;
     /* background-color: var(--bg-color); */
 }
+
 header {
   width: 100%;
   height: 4rem;
@@ -23,30 +25,38 @@ header {
   padding: 0 1rem;
   background-color: white;
 }
+
 header > img {
   width: 250px;
-  height: 150px;
+  height: 220px;
   margin-top: -2rem; 
 }
 nav {
-  width: 60%;
+    width: 70%;
+}
+.contact-btn {
+    display: none;
 }
 ul {
   display: flex;
   justify-content: space-evenly;
 }
+
+.hamburger {
+    display: none;
+}
+
 li {
   list-style: none;
   font-size: 14px;
   padding-bottom: 0.3rem;
 }
-.mobile-nav-toggle {
-    display: none;
-}
+
 li > a {
   color: var(--bg-color);
   text-decoration: none;
 }
+
 li > a:hover {
   border-bottom: 2px solid var(--bg-color);
 }
@@ -62,23 +72,28 @@ header > button, .img-txt > button, .txt-div > button {
   border-radius: 10px;
   cursor: pointer;
 }
+
 header > button:hover {
   opacity: 0.7;
 }
+
 #carousel-div {
     width: 100%;
     /* background: url("https://media.istockphoto.com/photos/view-of-wind-turbines-generating-electricity-in-english-channel-from-picture-id1193284558?k=20&m=1193284558&s=612x612&w=0&h=yW_cwTKo23hN8anVXelnFfmg6N_DFubYbriyc0HE_AI=");
     background-size: contain; */
 }
+
 .img-txt > button {
     display: none;
 }
+
 .carousel {
     position: relative;
     height: 500px;
     width: 100%;
     margin: 0 auto;
 }
+
 .carousel-track-container {
     /* background: var(--bg-color); */
     width: 100%;
@@ -86,6 +101,7 @@ header > button:hover {
     position: relative;
     overflow: hidden;
 }
+
 .carousel-track {
     display: flex;
     flex-direction: column;
@@ -97,6 +113,7 @@ header > button:hover {
     height: 100%;
     transition: transform 250ms ease-in;
 }
+
 .carousel-btn {
     position: absolute;
     top: 50%;
@@ -106,6 +123,7 @@ header > button:hover {
     cursor: pointer;
     transition: 0.6s ease;
 }
+
 .img-txt {
     font-size: 15px;
     position: absolute;
@@ -116,6 +134,7 @@ header > button:hover {
     text-align: left;
     z-index: 3;
 }
+
 .img-txt > h3 {
     width: fit-content;
     padding-bottom: 0.5rem;

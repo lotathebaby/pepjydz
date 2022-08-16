@@ -6,6 +6,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap"
         rel="stylesheet">
+    <link 
+        href="https://fonts.googleapis.com/icon?family=Material+Icons" 
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/f50cb12bbf.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="media.css">
@@ -17,36 +20,31 @@
 </head>
 
 <header class="header">
-    <img src="PEPJYDZ__2_-removebg-preview.png" alt="logo" />
-    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-        <span class="sr-only">Menu</span>
-    </button>
+    <img src="PEPJYDZ__4_-removebg-preview.png" alt="logo" />
 
     <nav>
-        <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+        <ul class="menu">
 
-            <li class="active">
-                <a href="#home">Home</a>
+            <li>
+                <a class="menuItem" href="#home">Home</a>
             </li>
             <li>
-                <a href="#services">Services</a>
+                <a class="menuItem" href="#services">Services</a>
             </li>
             <li>
-                <a href="#projects">Projects</a>
+                <a class="menuItem" href="#about">About Us</a>
             </li>
             <li>
-                <a href="#about">About Us</a>
-            </li>
-            <li>
-                <a href="#sustainability">Sustainability</a>
-            </li>
-            <li>
-                <a href="#contacts">Contacts</a>
+                <a class="menuItem" href="#contact">Contacts</a>
             </li>
         </ul>
     </nav>
+    <button class="hamburger">
+        <i class="menuIcon material-icons">menu</i>
+        <i class="closeIcon material-icons">close</i>
+    </button>
 
-    <button>Contact Us</button>
+    <button class="contact-btn">Contact Us</button>
 </header>
 <main>
     <section id="section-one">
@@ -62,8 +60,7 @@
                             <div class="overlay"></div>
                             <div class="img-txt img-txt-one">
                                 <h3>We Offer Professional Services</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere accusamus
-                                    voluptates perspiciatis soluta at! Quae officiis rem quis veniam doloremque?</p>
+                                <p>With our experienced staff, we ensure that our clients and customers enjoy the best and quality services. We aim to provide services that enrich our customers, business partners and the community in which we operate.</p>
                                 <button>Contact Us</button>
                             </div>
                         </li>
@@ -72,8 +69,7 @@
                             <div class="overlay"></div>
                             <div class="img-txt">
                                 <h3>Marine Consultancy & Management</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere accusamus
-                                    voluptates perspiciatis soluta at! Quae officiis rem quis veniam doloremque?</p>
+                                <p>We offer professional advice that thrives to find solutions to some of the industry's most complex and sharing our deep knowledge of the maritime world.</p>
                             </div>
                         </li>
                         <li class="carousel-slide">
@@ -81,8 +77,7 @@
                             <div class="overlay"></div>
                             <div class="img-txt">
                                 <h3>Marine Operational Support</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere accusamus
-                                    voluptates perspiciatis soluta at! Quae officiis rem quis veniam doloremque?</p>
+                                <p>We offer on-site coordination and supervision, project management, commissioning services and heavy-lift transportation of offshore assets.</p>
                             </div>
                         </li>
                     </ul>
@@ -117,49 +112,37 @@
                 <img src="https://media.istockphoto.com/photos/asian-engineer-working-in-engine-room-he-using-laptop-in-engine-of-picture-id1218412041?b=1&k=20&m=1218412041&s=170667a&w=0&h=FtPIls6fpMOorJPMnfWwxEzRCrRZ2cjvrG1aMffmUqc="
                     alt="" />
                 <h4>Ship Repairs</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, consequuntur, dignissimos
-                    itaque dolore officia vitae perspiciatis aut esse quam magni quidem quas quisquam qui facilis,
-                    voluptas vel consectetur sapiente mollitia.</p>
+                <p>We engage in ship repairs and refits, major conversion work, steel repairs and construction, vessel upgrades, ship life extension programmes, hull and tank blasting, preparation and painting.</p>
             </div>
             <div class="service up">
                 <img src="https://images.pexels.com/photos/262353/pexels-photo-262353.jpeg?auto=compress&cs=tinysrgb&w=600"
                     alt="" />
                 <h4>Marine Operational Support</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, consequuntur, dignissimos
-                    itaque dolore officia vitae perspiciatis aut esse quam magni quidem quas quisquam qui facilis,
-                    voluptas vel consectetur sapiente mollitia.</p>
+                <p>We engage in the on-site heavy-lift transportation of offshore assets, management of projects, coordination, supervision and commissioning services.</p>
             </div>
             <div class="service down">
                 <img src="https://images.unsplash.com/photo-1598193957011-39b9f2916992?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fG1hcml0aW1lJTIwbG9naXN0aWNzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                     alt="" />
                 <h4>Maritime Logistics</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, consequuntur, dignissimos
-                    itaque dolore officia vitae perspiciatis aut esse quam magni quidem quas quisquam qui facilis,
-                    voluptas vel consectetur sapiente mollitia.</p>
+                <p>We deal with the transportation, importation and charter of vessels, vessel spares, stores and consumables. We ensure the flow of materials from suppliers into an organization.</p>
             </div>
             <div class="service down">
                 <img src="https://media.istockphoto.com/photos/caucasian-man-engineer-staff-worker-with-tablet-in-hand-and-offshore-picture-id1213587532?b=1&k=20&m=1213587532&s=170667a&w=0&h=SoaHsVBMRrv2Xm-hPRBTDypZ0gXsHQKdOYYjMnxHxuc="
                     alt="" />
                 <h4>Marine Consultancy</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, consequuntur, dignissimos
-                    itaque dolore officia vitae perspiciatis aut esse quam magni quidem quas quisquam qui facilis,
-                    voluptas vel consectetur sapiente mollitia.</p>
+                <p>We are concerned with the inspection and survey, crew welfare and various manning solutions, acquisition of marine equipment and sales and regulatory activities such as registrations and licensing of the organization.</p>
             </div>
             <div class="service up">
                 <img src="https://media.istockphoto.com/photos/oil-rig-worker-fixing-the-pipes-picture-id157315939?k=20&m=157315939&s=612x612&w=0&h=RwleQqwQp3MweyCXN88MdUiObVTTrkXWRQmEIDYPxaM="
                     alt="" />
                 <h4>Marine Engineering</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, consequuntur, dignissimos
-                    itaque dolore officia vitae perspiciatis aut esse quam magni quidem quas quisquam qui facilis,
-                    voluptas vel consectetur sapiente mollitia.</p>
+                <p>We deal with rig support, piping work, valve, pump repairs and services, non-destructive tests, radar servicing and repairs, afloat ship repairs, steering gear repairs, supply and structural maintenance of well head, etc.</p>
             </div>
             <div class="service down">
                 <img src="https://media.istockphoto.com/photos/takes-a-risk-at-work-picture-id1132245221?b=1&k=20&m=1132245221&s=170667a&w=0&h=GIv9bmsjEE9KqvkyCaRlhm8FDd2nt15LyX4FeKSCSWk="
                     alt="" />
                 <h4>New Building Project</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, consequuntur, dignissimos
-                    itaque dolore officia vitae perspiciatis aut esse quam magni quidem quas quisquam qui facilis,
-                    voluptas vel consectetur sapiente mollitia.</p>
+                <p>Some of the expertise we offer include but are not limited to equipment procurement, newbuilding project supervision, contract negotiation and technical coordination.</p>
             </div>
         </div>
     </section>
@@ -175,7 +158,7 @@
                 <h2>Make Enquires</h2>
                 <p>Interested in any of our services ? Talk to our experts today.</p>
                 <div>
-                    <p><span><i class="fa-solid fa-phone"></i></span>+234123456789</p>
+                    <p><span><i class="fa-solid fa-phone"></i></span>+234123476789</p>
                     <p><span><i class="fa-solid fa-location-dot"></i></span>No 5, Omuma Close Rumuogba Estate, Port
                         Harcourt, Rivers State.</p>
                     <p><span><i class="fa-solid fa-envelope"></i></span>tochukwuotiji@yahoo.com</p>
@@ -199,7 +182,7 @@
 <footer id="footer" class="footer">
     <section class="logo">
         <!-- LOGO -->
-        <img src="./images/PEPJYDZ-removebg-preview.png" alt="">
+        <img src="PEPJYDZ__4_-removebg-preview.png" alt="">
         <!-- SOCIAL MEDIA -->
         <div>
             <a href="#"><i class="fa-brands fa-instagram"></i></a>
@@ -211,9 +194,9 @@
     <section class="footer--nav">
         <!-- NAVIGATION -->
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
         <ul>
             <li><a href="#">Career</a></li>
@@ -235,8 +218,8 @@
     ScrollReveal({
         reset: true,
         distance: '60px',
-        duration: 2500,
-        delay: 300
+        duration: 1500,
+        delay: 200
     });
 
     ScrollReveal().reveal('.header', { delay: 500 });

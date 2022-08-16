@@ -1,36 +1,29 @@
-@media screen and (min-width: 1023px) and (max-width: 1200px) {
+@media screen and (min-width: 1083px) and (max-width: 1200px) {
     #service-div {
-        grid-gap: 25px;
+        grid-gap: 15px;
         text-align: center;
-       grid-template-columns: 330px 330px 330px;
+        padding: 2rem 1.5rem;
     }
     .mobile-nav-toggle {
         display: none;
     }
     .service {
-        width: 330px;
+        width: 300px;
     }
     .service > img {
-        width: 300px;
-        height: 270px;
+        width: 280px;
+        height: 230px;
     }  
     .service > p {
-        width: 330px;
+        width: 300px;
     }
 }
-@media screen and (min-width: 751px) and (max-width: 1022px) {
+@media screen and (min-width: 751px) and (max-width: 1082px) {
     header > img {
         margin-left: -13px;
     }
-    header > button {
-        padding: 0.8rem 0;
-        width: 100px;
-    }
-    .mobile-nav-toggle {
-        display: none;
-    }
     nav {
-        width: 68%;
+        width: 70%;
     }
     .img-txt {
         font-size: 14px;
@@ -87,54 +80,52 @@
         height: 60px;
     }
     header > img {
-        width: 300px;
-        height: 200px;
+        width: 11rem;
+        height: 9.5rem;
+        margin-left: -1.5rem;
         display: flex;
         align-self: center;
-        /* margin-top: -3.5rem;
-        margin-left: -2rem;  */
+        margin-top: -1.5rem;
       }
-    .primary-navigation {
-        padding: 2rem;
-        margin: 0;
-        position: fixed;
-        z-index: 1000;
-        inset: 0 0 50% 10%;
-        transform: translateX(100%);
-        transition: transform 350ms ease-out;
-        backdrop-filter: blur(1rem);
-        background: hsl(0 0% 100% / 0.1)
-    }
-    ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-    li > a {
-        padding-bottom: 2rem;
-    }
-    .primary-navigation[data-visible="true"] {
-        transform: translateX(0%);
-    }
-    .mobile-nav-toggle {
+    .hamburger {
         display: block;
-        position: absolute;
-        background-color: transparent;
-        width: 2rem;
-        aspect-ratio: 1;
-        top: 2rem;
-        margin-top: -10px;
-        right: 2rem;
-        z-index: 9999;
-        background-image: url("images/justify.png");
-        background-repeat: no-repeat;
+        position: fixed;
+        z-index: 100;
+        top: 1.3rem;
+        right: 0.8rem;
+        padding: 2.5px;
+        border: none;
+        background: var(--btn-color);
+        cursor: pointer;
     }
-    header > button {
+    .menuItem {
+        color: var(--btn-color);
+        font-weight: 700;
+    }
+    .closeIcon {
         display: none;
     }
-    .mobile-nav-toggle[aria-expanded="true"] {
-        background-image: url("images/x.png");
-        background-repeat: no-repeat;
+    .menu {
+        position: fixed;
+        transform: translateY(-100%);
+        transition: transform 0.2s;
+        padding-top: -1rem;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 99;
+        background: hsl(0 0% 100% / 0.1);
+        backdrop-filter: blur(0.5rem);
+        list-style: none;
+        text-align: center;
+        padding: 1rem;
+    }
+    .showMenu {
+        transform: translateY(0);
+    }
+    .contact-btn {
+        display: none;
     }
     .img-txt > p {
         font-size: 0.9em;

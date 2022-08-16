@@ -86,27 +86,28 @@ dotNav.addEventListener('click', e => {
     hideShowArrows(slides, prevBtn, nextBtn, targetIndex)
 })
 
-const primaryNav = document.querySelector(".primary-navigation");
-const navToggle = document.querySelector(".mobile-nav-toggle");
+const menu = document.querySelector(".menu");
+const menuItems = document.querySelectorAll(".menuItem");
+const hamburger = document.querySelector(".hamburger");
+const closeIcon = document.querySelector(".closeIcon");
+const menuIcon = document.querySelector(".menuIcon");
 
- navToggle.addEventListener('click', () => {
-     const visibility = primaryNav.getAttribute('data-visible')
+function toggleMenu() {
+    if (menu.classList.contains("showMenu")) {
+        menu.classList.remove("showMenu");
+        closeIcon.style.display = "none";
+        menuIcon.style.display = "block";
+    } else {
+        menu.classList.add("showMenu");
+        closeIcon.style.display = "block";
+        menuIcon.style.display = "none"
+    }
+}
 
-     if (visibility === "false") {
-         primaryNav.setAttribute("data-visible", true);
-         navToggle.setAttribute('aria-expanded', true);
-     } else if (visibility === "true") {
-         primaryNav.setAttribute('data-visible', false);
-         navToggle.setAttribute('aria-expanded', false);
-     }
- })
-// const hamburger = document.querySelector(".hamburger");
-// hamburger.addEventListener("click", ()=> {
-//     hamburger.classList.toggle("active");
-//     navMenu.classList.toggle("active");
-// })
+hamburger.addEventListener("click", toggleMenu)
 
-// document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", ()=> {
-//     hamburger.classList.remove("active");
-//     navMenu.classList.remove("active");
-// }))
+menuItems.forEach(
+    function(menuItem) {
+        menuItem.addEventListener("click", toggleMenu);
+    }
+)
