@@ -101,6 +101,8 @@ function toggleMenu() {
         menu.classList.add("showMenu");
         closeIcon.style.display = "block";
         menuIcon.style.display = "none"
+      menu.style.display = "flex";
+//       made some changes here
     }
 }
 
