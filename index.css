@@ -416,6 +416,7 @@ div > .counter {
 }
 .contact--card form input[type="submit"] {
   border: none;
+  padding: 0.5rem;
   background-color: var(--btn-color);
   color: white;
 }
