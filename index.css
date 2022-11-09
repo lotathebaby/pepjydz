@@ -488,7 +488,7 @@ footer form input[type="text"] {
 footer form input[type="submit"] {
   /* height: 2rem; */
   border-radius: 5px;
-  padding: 0.5rem;
+  padding: 0.75rem;
   cursor: pointer;
   background-color: var(--btn-color);
   border: none;
